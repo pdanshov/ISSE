@@ -137,54 +137,54 @@ am__uninstall_files_from_dir = { \
   }
 am__installdirs = "$(DESTDIR)$(libdir)"
 LTLIBRARIES = $(lib_LTLIBRARIES) $(noinst_LTLIBRARIES)
-libfftw3_omp_la_DEPENDENCIES =  \
-	../libfftw3.la
-am_libfftw3_omp_la_OBJECTS =  \
-	libfftw3_omp_la-api.lo \
-	libfftw3_omp_la-conf.lo \
-	libfftw3_omp_la-openmp.lo \
-	libfftw3_omp_la-dft-vrank-geq1.lo \
-	libfftw3_omp_la-ct.lo \
-	libfftw3_omp_la-rdft-vrank-geq1.lo \
-	libfftw3_omp_la-hc2hc.lo \
-	libfftw3_omp_la-vrank-geq1-rdft2.lo \
-	libfftw3_omp_la-f77api.lo
-libfftw3_omp_la_OBJECTS =  \
-	$(am_libfftw3_omp_la_OBJECTS)
+libfftw3f_omp_la_DEPENDENCIES =  \
+	../libfftw3f.la
+am_libfftw3f_omp_la_OBJECTS =  \
+	libfftw3f_omp_la-api.lo \
+	libfftw3f_omp_la-conf.lo \
+	libfftw3f_omp_la-openmp.lo \
+	libfftw3f_omp_la-dft-vrank-geq1.lo \
+	libfftw3f_omp_la-ct.lo \
+	libfftw3f_omp_la-rdft-vrank-geq1.lo \
+	libfftw3f_omp_la-hc2hc.lo \
+	libfftw3f_omp_la-vrank-geq1-rdft2.lo \
+	libfftw3f_omp_la-f77api.lo
+libfftw3f_omp_la_OBJECTS =  \
+	$(am_libfftw3f_omp_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
 am__v_lt_0 = --silent
 am__v_lt_1 = 
-libfftw3_omp_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+libfftw3f_omp_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
-	$(libfftw3_omp_la_CFLAGS) $(CFLAGS) \
-	$(libfftw3_omp_la_LDFLAGS) $(LDFLAGS) -o $@
-##am_libfftw3_omp_la_rpath =  \
+	$(libfftw3f_omp_la_CFLAGS) $(CFLAGS) \
+	$(libfftw3f_omp_la_LDFLAGS) $(LDFLAGS) -o $@
+##am_libfftw3f_omp_la_rpath =  \
 ##	-rpath \
 ##	$(libdir)
-#am_libfftw3_omp_la_rpath =  \
+#am_libfftw3f_omp_la_rpath =  \
 #	-rpath $(libdir)
-libfftw3_threads_la_DEPENDENCIES =  \
-	../libfftw3.la
-am_libfftw3_threads_la_OBJECTS =  \
-	libfftw3_threads_la-api.lo \
-	libfftw3_threads_la-conf.lo \
-	libfftw3_threads_la-threads.lo \
-	libfftw3_threads_la-dft-vrank-geq1.lo \
-	libfftw3_threads_la-ct.lo \
-	libfftw3_threads_la-rdft-vrank-geq1.lo \
-	libfftw3_threads_la-hc2hc.lo \
-	libfftw3_threads_la-vrank-geq1-rdft2.lo \
-	libfftw3_threads_la-f77api.lo
-libfftw3_threads_la_OBJECTS =  \
-	$(am_libfftw3_threads_la_OBJECTS)
-libfftw3_threads_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+libfftw3f_threads_la_DEPENDENCIES =  \
+	../libfftw3f.la
+am_libfftw3f_threads_la_OBJECTS =  \
+	libfftw3f_threads_la-api.lo \
+	libfftw3f_threads_la-conf.lo \
+	libfftw3f_threads_la-threads.lo \
+	libfftw3f_threads_la-dft-vrank-geq1.lo \
+	libfftw3f_threads_la-ct.lo \
+	libfftw3f_threads_la-rdft-vrank-geq1.lo \
+	libfftw3f_threads_la-hc2hc.lo \
+	libfftw3f_threads_la-vrank-geq1-rdft2.lo \
+	libfftw3f_threads_la-f77api.lo
+libfftw3f_threads_la_OBJECTS =  \
+	$(am_libfftw3f_threads_la_OBJECTS)
+libfftw3f_threads_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
-	$(libfftw3_threads_la_CFLAGS) $(CFLAGS) \
-	$(libfftw3_threads_la_LDFLAGS) $(LDFLAGS) -o $@
-#am_libfftw3_threads_la_rpath =  \
+	$(libfftw3f_threads_la_CFLAGS) $(CFLAGS) \
+	$(libfftw3f_threads_la_LDFLAGS) $(LDFLAGS) -o $@
+#am_libfftw3f_threads_la_rpath =  \
 #	-rpath $(libdir)
-##am_libfftw3_threads_la_rpath =
+##am_libfftw3f_threads_la_rpath =
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -219,10 +219,10 @@ AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(libfftw3_omp_la_SOURCES) \
-	$(libfftw3_threads_la_SOURCES)
-DIST_SOURCES = $(libfftw3_omp_la_SOURCES) \
-	$(libfftw3_threads_la_SOURCES)
+SOURCES = $(libfftw3f_omp_la_SOURCES) \
+	$(libfftw3f_threads_la_SOURCES)
+DIST_SOURCES = $(libfftw3f_omp_la_SOURCES) \
+	$(libfftw3f_threads_la_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -231,16 +231,16 @@ am__can_run_installinfo = \
 am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)
 am__DIST_COMMON = $(srcdir)/Makefile.in $(top_srcdir)/depcomp
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/missing aclocal-1.15
 ALLOCA = 
 ALTIVEC_CFLAGS = 
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/missing autoconf
-AUTOHEADER = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/missing autoheader
-AUTOMAKE = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/missing automake-1.15
+AUTOCONF = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/missing autoconf
+AUTOHEADER = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/missing autoheader
+AUTOMAKE = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/missing automake-1.15
 AVX2_CFLAGS = 
 AVX512_CFLAGS = 
 AVX_128_FMA_CFLAGS = 
@@ -288,7 +288,7 @@ LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/missing makeinfo
+MAKEINFO = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 MPICC = 
@@ -312,8 +312,8 @@ PACKAGE_URL =
 PACKAGE_VERSION = 3.3.8
 PATH_SEPARATOR = :
 POW_LIB = 
-PRECISION = d
-PREC_SUFFIX = 
+PRECISION = s
+PREC_SUFFIX = f
 PTHREAD_CC = 
 PTHREAD_CFLAGS = 
 PTHREAD_LIBS = 
@@ -322,16 +322,16 @@ SED = /bin/sed
 SET_MAKE = 
 SHARED_VERSION_INFO = 8:8:5
 SHELL = /bin/bash
-SSE2_CFLAGS = 
+SSE2_CFLAGS = -msse
 STACK_ALIGN_CFLAGS = 
 STRIP = strip
 THREADLIBS = 
 VERSION = 3.3.8
 VSX_CFLAGS = 
-abs_builddir = /home/dolly/isse-code/sdks/fftw-3.3.8/threads
-abs_srcdir = /home/dolly/isse-code/sdks/fftw-3.3.8/threads
-abs_top_builddir = /home/dolly/isse-code/sdks/fftw-3.3.8
-abs_top_srcdir = /home/dolly/isse-code/sdks/fftw-3.3.8
+abs_builddir = /home/dolly/github/ISSE/sdks/fftw-3.3.8/threads
+abs_srcdir = /home/dolly/github/ISSE/sdks/fftw-3.3.8/threads
+abs_top_builddir = /home/dolly/github/ISSE/sdks/fftw-3.3.8
+abs_top_srcdir = /home/dolly/github/ISSE/sdks/fftw-3.3.8
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -362,7 +362,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/install-sh
+install_sh = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -386,24 +386,24 @@ top_srcdir = ..
 AM_CPPFLAGS = -I $(top_srcdir)
 AM_CFLAGS = $(STACK_ALIGN_CFLAGS)
 FFTWOMPLIB = 
-#FFTWOMPLIB = libfftw3_omp.la
-##noinst_LTLIBRARIES = libfftw3_threads.la
-#lib_LTLIBRARIES = libfftw3_threads.la $(FFTWOMPLIB)
+#FFTWOMPLIB = libfftw3f_omp.la
+##noinst_LTLIBRARIES = libfftw3f_threads.la
+#lib_LTLIBRARIES = libfftw3f_threads.la $(FFTWOMPLIB)
 lib_LTLIBRARIES = $(FFTWOMPLIB)
-libfftw3_threads_la_SOURCES = api.c conf.c threads.c	\
+libfftw3f_threads_la_SOURCES = api.c conf.c threads.c	\
 threads.h dft-vrank-geq1.c ct.c rdft-vrank-geq1.c hc2hc.c		\
 vrank-geq1-rdft2.c f77api.c f77funcs.h
 
-libfftw3_threads_la_CFLAGS = $(AM_CFLAGS) $(PTHREAD_CFLAGS)
-libfftw3_threads_la_LDFLAGS = -version-info 8:8:5
-libfftw3_threads_la_LIBADD = ../libfftw3.la
-libfftw3_omp_la_SOURCES = api.c conf.c openmp.c	\
+libfftw3f_threads_la_CFLAGS = $(AM_CFLAGS) $(PTHREAD_CFLAGS)
+libfftw3f_threads_la_LDFLAGS = -version-info 8:8:5
+libfftw3f_threads_la_LIBADD = ../libfftw3f.la
+libfftw3f_omp_la_SOURCES = api.c conf.c openmp.c	\
 threads.h dft-vrank-geq1.c ct.c rdft-vrank-geq1.c hc2hc.c	\
 vrank-geq1-rdft2.c f77api.c f77funcs.h
 
-libfftw3_omp_la_CFLAGS = $(AM_CFLAGS) $(OPENMP_CFLAGS)
-libfftw3_omp_la_LDFLAGS = -version-info 8:8:5
-libfftw3_omp_la_LIBADD = ../libfftw3.la
+libfftw3f_omp_la_CFLAGS = $(AM_CFLAGS) $(OPENMP_CFLAGS)
+libfftw3f_omp_la_LDFLAGS = -version-info 8:8:5
+libfftw3f_omp_la_LIBADD = ../libfftw3f.la
 all: all-am
 
 .SUFFIXES:
@@ -484,11 +484,11 @@ clean-noinstLTLIBRARIES:
 	  rm -f $${locs}; \
 	}
 
-libfftw3_omp.la: $(libfftw3_omp_la_OBJECTS) $(libfftw3_omp_la_DEPENDENCIES) $(EXTRA_libfftw3_omp_la_DEPENDENCIES) 
-	$(AM_V_CCLD)$(libfftw3_omp_la_LINK) $(am_libfftw3_omp_la_rpath) $(libfftw3_omp_la_OBJECTS) $(libfftw3_omp_la_LIBADD) $(LIBS)
+libfftw3f_omp.la: $(libfftw3f_omp_la_OBJECTS) $(libfftw3f_omp_la_DEPENDENCIES) $(EXTRA_libfftw3f_omp_la_DEPENDENCIES) 
+	$(AM_V_CCLD)$(libfftw3f_omp_la_LINK) $(am_libfftw3f_omp_la_rpath) $(libfftw3f_omp_la_OBJECTS) $(libfftw3f_omp_la_LIBADD) $(LIBS)
 
-libfftw3_threads.la: $(libfftw3_threads_la_OBJECTS) $(libfftw3_threads_la_DEPENDENCIES) $(EXTRA_libfftw3_threads_la_DEPENDENCIES) 
-	$(AM_V_CCLD)$(libfftw3_threads_la_LINK) $(am_libfftw3_threads_la_rpath) $(libfftw3_threads_la_OBJECTS) $(libfftw3_threads_la_LIBADD) $(LIBS)
+libfftw3f_threads.la: $(libfftw3f_threads_la_OBJECTS) $(libfftw3f_threads_la_DEPENDENCIES) $(EXTRA_libfftw3f_threads_la_DEPENDENCIES) 
+	$(AM_V_CCLD)$(libfftw3f_threads_la_LINK) $(am_libfftw3f_threads_la_rpath) $(libfftw3f_threads_la_OBJECTS) $(libfftw3f_threads_la_LIBADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -496,24 +496,24 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-include ./$(DEPDIR)/libfftw3_omp_la-api.Plo
-include ./$(DEPDIR)/libfftw3_omp_la-conf.Plo
-include ./$(DEPDIR)/libfftw3_omp_la-ct.Plo
-include ./$(DEPDIR)/libfftw3_omp_la-dft-vrank-geq1.Plo
-include ./$(DEPDIR)/libfftw3_omp_la-f77api.Plo
-include ./$(DEPDIR)/libfftw3_omp_la-hc2hc.Plo
-include ./$(DEPDIR)/libfftw3_omp_la-openmp.Plo
-include ./$(DEPDIR)/libfftw3_omp_la-rdft-vrank-geq1.Plo
-include ./$(DEPDIR)/libfftw3_omp_la-vrank-geq1-rdft2.Plo
-include ./$(DEPDIR)/libfftw3_threads_la-api.Plo
-include ./$(DEPDIR)/libfftw3_threads_la-conf.Plo
-include ./$(DEPDIR)/libfftw3_threads_la-ct.Plo
-include ./$(DEPDIR)/libfftw3_threads_la-dft-vrank-geq1.Plo
-include ./$(DEPDIR)/libfftw3_threads_la-f77api.Plo
-include ./$(DEPDIR)/libfftw3_threads_la-hc2hc.Plo
-include ./$(DEPDIR)/libfftw3_threads_la-rdft-vrank-geq1.Plo
-include ./$(DEPDIR)/libfftw3_threads_la-threads.Plo
-include ./$(DEPDIR)/libfftw3_threads_la-vrank-geq1-rdft2.Plo
+include ./$(DEPDIR)/libfftw3f_omp_la-api.Plo
+include ./$(DEPDIR)/libfftw3f_omp_la-conf.Plo
+include ./$(DEPDIR)/libfftw3f_omp_la-ct.Plo
+include ./$(DEPDIR)/libfftw3f_omp_la-dft-vrank-geq1.Plo
+include ./$(DEPDIR)/libfftw3f_omp_la-f77api.Plo
+include ./$(DEPDIR)/libfftw3f_omp_la-hc2hc.Plo
+include ./$(DEPDIR)/libfftw3f_omp_la-openmp.Plo
+include ./$(DEPDIR)/libfftw3f_omp_la-rdft-vrank-geq1.Plo
+include ./$(DEPDIR)/libfftw3f_omp_la-vrank-geq1-rdft2.Plo
+include ./$(DEPDIR)/libfftw3f_threads_la-api.Plo
+include ./$(DEPDIR)/libfftw3f_threads_la-conf.Plo
+include ./$(DEPDIR)/libfftw3f_threads_la-ct.Plo
+include ./$(DEPDIR)/libfftw3f_threads_la-dft-vrank-geq1.Plo
+include ./$(DEPDIR)/libfftw3f_threads_la-f77api.Plo
+include ./$(DEPDIR)/libfftw3f_threads_la-hc2hc.Plo
+include ./$(DEPDIR)/libfftw3f_threads_la-rdft-vrank-geq1.Plo
+include ./$(DEPDIR)/libfftw3f_threads_la-threads.Plo
+include ./$(DEPDIR)/libfftw3f_threads_la-vrank-geq1-rdft2.Plo
 
 .c.o:
 	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
@@ -536,131 +536,131 @@ include ./$(DEPDIR)/libfftw3_threads_la-vrank-geq1-rdft2.Plo
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(LTCOMPILE) -c -o $@ $<
 
-libfftw3_omp_la-api.lo: api.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3_omp_la-api.lo -MD -MP -MF $(DEPDIR)/libfftw3_omp_la-api.Tpo -c -o libfftw3_omp_la-api.lo `test -f 'api.c' || echo '$(srcdir)/'`api.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_omp_la-api.Tpo $(DEPDIR)/libfftw3_omp_la-api.Plo
-#	$(AM_V_CC)source='api.c' object='libfftw3_omp_la-api.lo' libtool=yes \
+libfftw3f_omp_la-api.lo: api.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3f_omp_la-api.lo -MD -MP -MF $(DEPDIR)/libfftw3f_omp_la-api.Tpo -c -o libfftw3f_omp_la-api.lo `test -f 'api.c' || echo '$(srcdir)/'`api.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_omp_la-api.Tpo $(DEPDIR)/libfftw3f_omp_la-api.Plo
+#	$(AM_V_CC)source='api.c' object='libfftw3f_omp_la-api.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3_omp_la-api.lo `test -f 'api.c' || echo '$(srcdir)/'`api.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_omp_la-api.lo `test -f 'api.c' || echo '$(srcdir)/'`api.c
 
-libfftw3_omp_la-conf.lo: conf.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3_omp_la-conf.lo -MD -MP -MF $(DEPDIR)/libfftw3_omp_la-conf.Tpo -c -o libfftw3_omp_la-conf.lo `test -f 'conf.c' || echo '$(srcdir)/'`conf.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_omp_la-conf.Tpo $(DEPDIR)/libfftw3_omp_la-conf.Plo
-#	$(AM_V_CC)source='conf.c' object='libfftw3_omp_la-conf.lo' libtool=yes \
+libfftw3f_omp_la-conf.lo: conf.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3f_omp_la-conf.lo -MD -MP -MF $(DEPDIR)/libfftw3f_omp_la-conf.Tpo -c -o libfftw3f_omp_la-conf.lo `test -f 'conf.c' || echo '$(srcdir)/'`conf.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_omp_la-conf.Tpo $(DEPDIR)/libfftw3f_omp_la-conf.Plo
+#	$(AM_V_CC)source='conf.c' object='libfftw3f_omp_la-conf.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3_omp_la-conf.lo `test -f 'conf.c' || echo '$(srcdir)/'`conf.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_omp_la-conf.lo `test -f 'conf.c' || echo '$(srcdir)/'`conf.c
 
-libfftw3_omp_la-openmp.lo: openmp.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3_omp_la-openmp.lo -MD -MP -MF $(DEPDIR)/libfftw3_omp_la-openmp.Tpo -c -o libfftw3_omp_la-openmp.lo `test -f 'openmp.c' || echo '$(srcdir)/'`openmp.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_omp_la-openmp.Tpo $(DEPDIR)/libfftw3_omp_la-openmp.Plo
-#	$(AM_V_CC)source='openmp.c' object='libfftw3_omp_la-openmp.lo' libtool=yes \
+libfftw3f_omp_la-openmp.lo: openmp.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3f_omp_la-openmp.lo -MD -MP -MF $(DEPDIR)/libfftw3f_omp_la-openmp.Tpo -c -o libfftw3f_omp_la-openmp.lo `test -f 'openmp.c' || echo '$(srcdir)/'`openmp.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_omp_la-openmp.Tpo $(DEPDIR)/libfftw3f_omp_la-openmp.Plo
+#	$(AM_V_CC)source='openmp.c' object='libfftw3f_omp_la-openmp.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3_omp_la-openmp.lo `test -f 'openmp.c' || echo '$(srcdir)/'`openmp.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_omp_la-openmp.lo `test -f 'openmp.c' || echo '$(srcdir)/'`openmp.c
 
-libfftw3_omp_la-dft-vrank-geq1.lo: dft-vrank-geq1.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3_omp_la-dft-vrank-geq1.lo -MD -MP -MF $(DEPDIR)/libfftw3_omp_la-dft-vrank-geq1.Tpo -c -o libfftw3_omp_la-dft-vrank-geq1.lo `test -f 'dft-vrank-geq1.c' || echo '$(srcdir)/'`dft-vrank-geq1.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_omp_la-dft-vrank-geq1.Tpo $(DEPDIR)/libfftw3_omp_la-dft-vrank-geq1.Plo
-#	$(AM_V_CC)source='dft-vrank-geq1.c' object='libfftw3_omp_la-dft-vrank-geq1.lo' libtool=yes \
+libfftw3f_omp_la-dft-vrank-geq1.lo: dft-vrank-geq1.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3f_omp_la-dft-vrank-geq1.lo -MD -MP -MF $(DEPDIR)/libfftw3f_omp_la-dft-vrank-geq1.Tpo -c -o libfftw3f_omp_la-dft-vrank-geq1.lo `test -f 'dft-vrank-geq1.c' || echo '$(srcdir)/'`dft-vrank-geq1.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_omp_la-dft-vrank-geq1.Tpo $(DEPDIR)/libfftw3f_omp_la-dft-vrank-geq1.Plo
+#	$(AM_V_CC)source='dft-vrank-geq1.c' object='libfftw3f_omp_la-dft-vrank-geq1.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3_omp_la-dft-vrank-geq1.lo `test -f 'dft-vrank-geq1.c' || echo '$(srcdir)/'`dft-vrank-geq1.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_omp_la-dft-vrank-geq1.lo `test -f 'dft-vrank-geq1.c' || echo '$(srcdir)/'`dft-vrank-geq1.c
 
-libfftw3_omp_la-ct.lo: ct.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3_omp_la-ct.lo -MD -MP -MF $(DEPDIR)/libfftw3_omp_la-ct.Tpo -c -o libfftw3_omp_la-ct.lo `test -f 'ct.c' || echo '$(srcdir)/'`ct.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_omp_la-ct.Tpo $(DEPDIR)/libfftw3_omp_la-ct.Plo
-#	$(AM_V_CC)source='ct.c' object='libfftw3_omp_la-ct.lo' libtool=yes \
+libfftw3f_omp_la-ct.lo: ct.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3f_omp_la-ct.lo -MD -MP -MF $(DEPDIR)/libfftw3f_omp_la-ct.Tpo -c -o libfftw3f_omp_la-ct.lo `test -f 'ct.c' || echo '$(srcdir)/'`ct.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_omp_la-ct.Tpo $(DEPDIR)/libfftw3f_omp_la-ct.Plo
+#	$(AM_V_CC)source='ct.c' object='libfftw3f_omp_la-ct.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3_omp_la-ct.lo `test -f 'ct.c' || echo '$(srcdir)/'`ct.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_omp_la-ct.lo `test -f 'ct.c' || echo '$(srcdir)/'`ct.c
 
-libfftw3_omp_la-rdft-vrank-geq1.lo: rdft-vrank-geq1.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3_omp_la-rdft-vrank-geq1.lo -MD -MP -MF $(DEPDIR)/libfftw3_omp_la-rdft-vrank-geq1.Tpo -c -o libfftw3_omp_la-rdft-vrank-geq1.lo `test -f 'rdft-vrank-geq1.c' || echo '$(srcdir)/'`rdft-vrank-geq1.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_omp_la-rdft-vrank-geq1.Tpo $(DEPDIR)/libfftw3_omp_la-rdft-vrank-geq1.Plo
-#	$(AM_V_CC)source='rdft-vrank-geq1.c' object='libfftw3_omp_la-rdft-vrank-geq1.lo' libtool=yes \
+libfftw3f_omp_la-rdft-vrank-geq1.lo: rdft-vrank-geq1.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3f_omp_la-rdft-vrank-geq1.lo -MD -MP -MF $(DEPDIR)/libfftw3f_omp_la-rdft-vrank-geq1.Tpo -c -o libfftw3f_omp_la-rdft-vrank-geq1.lo `test -f 'rdft-vrank-geq1.c' || echo '$(srcdir)/'`rdft-vrank-geq1.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_omp_la-rdft-vrank-geq1.Tpo $(DEPDIR)/libfftw3f_omp_la-rdft-vrank-geq1.Plo
+#	$(AM_V_CC)source='rdft-vrank-geq1.c' object='libfftw3f_omp_la-rdft-vrank-geq1.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3_omp_la-rdft-vrank-geq1.lo `test -f 'rdft-vrank-geq1.c' || echo '$(srcdir)/'`rdft-vrank-geq1.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_omp_la-rdft-vrank-geq1.lo `test -f 'rdft-vrank-geq1.c' || echo '$(srcdir)/'`rdft-vrank-geq1.c
 
-libfftw3_omp_la-hc2hc.lo: hc2hc.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3_omp_la-hc2hc.lo -MD -MP -MF $(DEPDIR)/libfftw3_omp_la-hc2hc.Tpo -c -o libfftw3_omp_la-hc2hc.lo `test -f 'hc2hc.c' || echo '$(srcdir)/'`hc2hc.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_omp_la-hc2hc.Tpo $(DEPDIR)/libfftw3_omp_la-hc2hc.Plo
-#	$(AM_V_CC)source='hc2hc.c' object='libfftw3_omp_la-hc2hc.lo' libtool=yes \
+libfftw3f_omp_la-hc2hc.lo: hc2hc.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3f_omp_la-hc2hc.lo -MD -MP -MF $(DEPDIR)/libfftw3f_omp_la-hc2hc.Tpo -c -o libfftw3f_omp_la-hc2hc.lo `test -f 'hc2hc.c' || echo '$(srcdir)/'`hc2hc.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_omp_la-hc2hc.Tpo $(DEPDIR)/libfftw3f_omp_la-hc2hc.Plo
+#	$(AM_V_CC)source='hc2hc.c' object='libfftw3f_omp_la-hc2hc.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3_omp_la-hc2hc.lo `test -f 'hc2hc.c' || echo '$(srcdir)/'`hc2hc.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_omp_la-hc2hc.lo `test -f 'hc2hc.c' || echo '$(srcdir)/'`hc2hc.c
 
-libfftw3_omp_la-vrank-geq1-rdft2.lo: vrank-geq1-rdft2.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3_omp_la-vrank-geq1-rdft2.lo -MD -MP -MF $(DEPDIR)/libfftw3_omp_la-vrank-geq1-rdft2.Tpo -c -o libfftw3_omp_la-vrank-geq1-rdft2.lo `test -f 'vrank-geq1-rdft2.c' || echo '$(srcdir)/'`vrank-geq1-rdft2.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_omp_la-vrank-geq1-rdft2.Tpo $(DEPDIR)/libfftw3_omp_la-vrank-geq1-rdft2.Plo
-#	$(AM_V_CC)source='vrank-geq1-rdft2.c' object='libfftw3_omp_la-vrank-geq1-rdft2.lo' libtool=yes \
+libfftw3f_omp_la-vrank-geq1-rdft2.lo: vrank-geq1-rdft2.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3f_omp_la-vrank-geq1-rdft2.lo -MD -MP -MF $(DEPDIR)/libfftw3f_omp_la-vrank-geq1-rdft2.Tpo -c -o libfftw3f_omp_la-vrank-geq1-rdft2.lo `test -f 'vrank-geq1-rdft2.c' || echo '$(srcdir)/'`vrank-geq1-rdft2.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_omp_la-vrank-geq1-rdft2.Tpo $(DEPDIR)/libfftw3f_omp_la-vrank-geq1-rdft2.Plo
+#	$(AM_V_CC)source='vrank-geq1-rdft2.c' object='libfftw3f_omp_la-vrank-geq1-rdft2.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3_omp_la-vrank-geq1-rdft2.lo `test -f 'vrank-geq1-rdft2.c' || echo '$(srcdir)/'`vrank-geq1-rdft2.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_omp_la-vrank-geq1-rdft2.lo `test -f 'vrank-geq1-rdft2.c' || echo '$(srcdir)/'`vrank-geq1-rdft2.c
 
-libfftw3_omp_la-f77api.lo: f77api.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3_omp_la-f77api.lo -MD -MP -MF $(DEPDIR)/libfftw3_omp_la-f77api.Tpo -c -o libfftw3_omp_la-f77api.lo `test -f 'f77api.c' || echo '$(srcdir)/'`f77api.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_omp_la-f77api.Tpo $(DEPDIR)/libfftw3_omp_la-f77api.Plo
-#	$(AM_V_CC)source='f77api.c' object='libfftw3_omp_la-f77api.lo' libtool=yes \
+libfftw3f_omp_la-f77api.lo: f77api.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -MT libfftw3f_omp_la-f77api.lo -MD -MP -MF $(DEPDIR)/libfftw3f_omp_la-f77api.Tpo -c -o libfftw3f_omp_la-f77api.lo `test -f 'f77api.c' || echo '$(srcdir)/'`f77api.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_omp_la-f77api.Tpo $(DEPDIR)/libfftw3f_omp_la-f77api.Plo
+#	$(AM_V_CC)source='f77api.c' object='libfftw3f_omp_la-f77api.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3_omp_la-f77api.lo `test -f 'f77api.c' || echo '$(srcdir)/'`f77api.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_omp_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_omp_la-f77api.lo `test -f 'f77api.c' || echo '$(srcdir)/'`f77api.c
 
-libfftw3_threads_la-api.lo: api.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3_threads_la-api.lo -MD -MP -MF $(DEPDIR)/libfftw3_threads_la-api.Tpo -c -o libfftw3_threads_la-api.lo `test -f 'api.c' || echo '$(srcdir)/'`api.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_threads_la-api.Tpo $(DEPDIR)/libfftw3_threads_la-api.Plo
-#	$(AM_V_CC)source='api.c' object='libfftw3_threads_la-api.lo' libtool=yes \
+libfftw3f_threads_la-api.lo: api.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3f_threads_la-api.lo -MD -MP -MF $(DEPDIR)/libfftw3f_threads_la-api.Tpo -c -o libfftw3f_threads_la-api.lo `test -f 'api.c' || echo '$(srcdir)/'`api.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_threads_la-api.Tpo $(DEPDIR)/libfftw3f_threads_la-api.Plo
+#	$(AM_V_CC)source='api.c' object='libfftw3f_threads_la-api.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3_threads_la-api.lo `test -f 'api.c' || echo '$(srcdir)/'`api.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_threads_la-api.lo `test -f 'api.c' || echo '$(srcdir)/'`api.c
 
-libfftw3_threads_la-conf.lo: conf.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3_threads_la-conf.lo -MD -MP -MF $(DEPDIR)/libfftw3_threads_la-conf.Tpo -c -o libfftw3_threads_la-conf.lo `test -f 'conf.c' || echo '$(srcdir)/'`conf.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_threads_la-conf.Tpo $(DEPDIR)/libfftw3_threads_la-conf.Plo
-#	$(AM_V_CC)source='conf.c' object='libfftw3_threads_la-conf.lo' libtool=yes \
+libfftw3f_threads_la-conf.lo: conf.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3f_threads_la-conf.lo -MD -MP -MF $(DEPDIR)/libfftw3f_threads_la-conf.Tpo -c -o libfftw3f_threads_la-conf.lo `test -f 'conf.c' || echo '$(srcdir)/'`conf.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_threads_la-conf.Tpo $(DEPDIR)/libfftw3f_threads_la-conf.Plo
+#	$(AM_V_CC)source='conf.c' object='libfftw3f_threads_la-conf.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3_threads_la-conf.lo `test -f 'conf.c' || echo '$(srcdir)/'`conf.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_threads_la-conf.lo `test -f 'conf.c' || echo '$(srcdir)/'`conf.c
 
-libfftw3_threads_la-threads.lo: threads.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3_threads_la-threads.lo -MD -MP -MF $(DEPDIR)/libfftw3_threads_la-threads.Tpo -c -o libfftw3_threads_la-threads.lo `test -f 'threads.c' || echo '$(srcdir)/'`threads.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_threads_la-threads.Tpo $(DEPDIR)/libfftw3_threads_la-threads.Plo
-#	$(AM_V_CC)source='threads.c' object='libfftw3_threads_la-threads.lo' libtool=yes \
+libfftw3f_threads_la-threads.lo: threads.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3f_threads_la-threads.lo -MD -MP -MF $(DEPDIR)/libfftw3f_threads_la-threads.Tpo -c -o libfftw3f_threads_la-threads.lo `test -f 'threads.c' || echo '$(srcdir)/'`threads.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_threads_la-threads.Tpo $(DEPDIR)/libfftw3f_threads_la-threads.Plo
+#	$(AM_V_CC)source='threads.c' object='libfftw3f_threads_la-threads.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3_threads_la-threads.lo `test -f 'threads.c' || echo '$(srcdir)/'`threads.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_threads_la-threads.lo `test -f 'threads.c' || echo '$(srcdir)/'`threads.c
 
-libfftw3_threads_la-dft-vrank-geq1.lo: dft-vrank-geq1.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3_threads_la-dft-vrank-geq1.lo -MD -MP -MF $(DEPDIR)/libfftw3_threads_la-dft-vrank-geq1.Tpo -c -o libfftw3_threads_la-dft-vrank-geq1.lo `test -f 'dft-vrank-geq1.c' || echo '$(srcdir)/'`dft-vrank-geq1.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_threads_la-dft-vrank-geq1.Tpo $(DEPDIR)/libfftw3_threads_la-dft-vrank-geq1.Plo
-#	$(AM_V_CC)source='dft-vrank-geq1.c' object='libfftw3_threads_la-dft-vrank-geq1.lo' libtool=yes \
+libfftw3f_threads_la-dft-vrank-geq1.lo: dft-vrank-geq1.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3f_threads_la-dft-vrank-geq1.lo -MD -MP -MF $(DEPDIR)/libfftw3f_threads_la-dft-vrank-geq1.Tpo -c -o libfftw3f_threads_la-dft-vrank-geq1.lo `test -f 'dft-vrank-geq1.c' || echo '$(srcdir)/'`dft-vrank-geq1.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_threads_la-dft-vrank-geq1.Tpo $(DEPDIR)/libfftw3f_threads_la-dft-vrank-geq1.Plo
+#	$(AM_V_CC)source='dft-vrank-geq1.c' object='libfftw3f_threads_la-dft-vrank-geq1.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3_threads_la-dft-vrank-geq1.lo `test -f 'dft-vrank-geq1.c' || echo '$(srcdir)/'`dft-vrank-geq1.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_threads_la-dft-vrank-geq1.lo `test -f 'dft-vrank-geq1.c' || echo '$(srcdir)/'`dft-vrank-geq1.c
 
-libfftw3_threads_la-ct.lo: ct.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3_threads_la-ct.lo -MD -MP -MF $(DEPDIR)/libfftw3_threads_la-ct.Tpo -c -o libfftw3_threads_la-ct.lo `test -f 'ct.c' || echo '$(srcdir)/'`ct.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_threads_la-ct.Tpo $(DEPDIR)/libfftw3_threads_la-ct.Plo
-#	$(AM_V_CC)source='ct.c' object='libfftw3_threads_la-ct.lo' libtool=yes \
+libfftw3f_threads_la-ct.lo: ct.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3f_threads_la-ct.lo -MD -MP -MF $(DEPDIR)/libfftw3f_threads_la-ct.Tpo -c -o libfftw3f_threads_la-ct.lo `test -f 'ct.c' || echo '$(srcdir)/'`ct.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_threads_la-ct.Tpo $(DEPDIR)/libfftw3f_threads_la-ct.Plo
+#	$(AM_V_CC)source='ct.c' object='libfftw3f_threads_la-ct.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3_threads_la-ct.lo `test -f 'ct.c' || echo '$(srcdir)/'`ct.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_threads_la-ct.lo `test -f 'ct.c' || echo '$(srcdir)/'`ct.c
 
-libfftw3_threads_la-rdft-vrank-geq1.lo: rdft-vrank-geq1.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3_threads_la-rdft-vrank-geq1.lo -MD -MP -MF $(DEPDIR)/libfftw3_threads_la-rdft-vrank-geq1.Tpo -c -o libfftw3_threads_la-rdft-vrank-geq1.lo `test -f 'rdft-vrank-geq1.c' || echo '$(srcdir)/'`rdft-vrank-geq1.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_threads_la-rdft-vrank-geq1.Tpo $(DEPDIR)/libfftw3_threads_la-rdft-vrank-geq1.Plo
-#	$(AM_V_CC)source='rdft-vrank-geq1.c' object='libfftw3_threads_la-rdft-vrank-geq1.lo' libtool=yes \
+libfftw3f_threads_la-rdft-vrank-geq1.lo: rdft-vrank-geq1.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3f_threads_la-rdft-vrank-geq1.lo -MD -MP -MF $(DEPDIR)/libfftw3f_threads_la-rdft-vrank-geq1.Tpo -c -o libfftw3f_threads_la-rdft-vrank-geq1.lo `test -f 'rdft-vrank-geq1.c' || echo '$(srcdir)/'`rdft-vrank-geq1.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_threads_la-rdft-vrank-geq1.Tpo $(DEPDIR)/libfftw3f_threads_la-rdft-vrank-geq1.Plo
+#	$(AM_V_CC)source='rdft-vrank-geq1.c' object='libfftw3f_threads_la-rdft-vrank-geq1.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3_threads_la-rdft-vrank-geq1.lo `test -f 'rdft-vrank-geq1.c' || echo '$(srcdir)/'`rdft-vrank-geq1.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_threads_la-rdft-vrank-geq1.lo `test -f 'rdft-vrank-geq1.c' || echo '$(srcdir)/'`rdft-vrank-geq1.c
 
-libfftw3_threads_la-hc2hc.lo: hc2hc.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3_threads_la-hc2hc.lo -MD -MP -MF $(DEPDIR)/libfftw3_threads_la-hc2hc.Tpo -c -o libfftw3_threads_la-hc2hc.lo `test -f 'hc2hc.c' || echo '$(srcdir)/'`hc2hc.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_threads_la-hc2hc.Tpo $(DEPDIR)/libfftw3_threads_la-hc2hc.Plo
-#	$(AM_V_CC)source='hc2hc.c' object='libfftw3_threads_la-hc2hc.lo' libtool=yes \
+libfftw3f_threads_la-hc2hc.lo: hc2hc.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3f_threads_la-hc2hc.lo -MD -MP -MF $(DEPDIR)/libfftw3f_threads_la-hc2hc.Tpo -c -o libfftw3f_threads_la-hc2hc.lo `test -f 'hc2hc.c' || echo '$(srcdir)/'`hc2hc.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_threads_la-hc2hc.Tpo $(DEPDIR)/libfftw3f_threads_la-hc2hc.Plo
+#	$(AM_V_CC)source='hc2hc.c' object='libfftw3f_threads_la-hc2hc.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3_threads_la-hc2hc.lo `test -f 'hc2hc.c' || echo '$(srcdir)/'`hc2hc.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_threads_la-hc2hc.lo `test -f 'hc2hc.c' || echo '$(srcdir)/'`hc2hc.c
 
-libfftw3_threads_la-vrank-geq1-rdft2.lo: vrank-geq1-rdft2.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3_threads_la-vrank-geq1-rdft2.lo -MD -MP -MF $(DEPDIR)/libfftw3_threads_la-vrank-geq1-rdft2.Tpo -c -o libfftw3_threads_la-vrank-geq1-rdft2.lo `test -f 'vrank-geq1-rdft2.c' || echo '$(srcdir)/'`vrank-geq1-rdft2.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_threads_la-vrank-geq1-rdft2.Tpo $(DEPDIR)/libfftw3_threads_la-vrank-geq1-rdft2.Plo
-#	$(AM_V_CC)source='vrank-geq1-rdft2.c' object='libfftw3_threads_la-vrank-geq1-rdft2.lo' libtool=yes \
+libfftw3f_threads_la-vrank-geq1-rdft2.lo: vrank-geq1-rdft2.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3f_threads_la-vrank-geq1-rdft2.lo -MD -MP -MF $(DEPDIR)/libfftw3f_threads_la-vrank-geq1-rdft2.Tpo -c -o libfftw3f_threads_la-vrank-geq1-rdft2.lo `test -f 'vrank-geq1-rdft2.c' || echo '$(srcdir)/'`vrank-geq1-rdft2.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_threads_la-vrank-geq1-rdft2.Tpo $(DEPDIR)/libfftw3f_threads_la-vrank-geq1-rdft2.Plo
+#	$(AM_V_CC)source='vrank-geq1-rdft2.c' object='libfftw3f_threads_la-vrank-geq1-rdft2.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3_threads_la-vrank-geq1-rdft2.lo `test -f 'vrank-geq1-rdft2.c' || echo '$(srcdir)/'`vrank-geq1-rdft2.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_threads_la-vrank-geq1-rdft2.lo `test -f 'vrank-geq1-rdft2.c' || echo '$(srcdir)/'`vrank-geq1-rdft2.c
 
-libfftw3_threads_la-f77api.lo: f77api.c
-	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3_threads_la-f77api.lo -MD -MP -MF $(DEPDIR)/libfftw3_threads_la-f77api.Tpo -c -o libfftw3_threads_la-f77api.lo `test -f 'f77api.c' || echo '$(srcdir)/'`f77api.c
-	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3_threads_la-f77api.Tpo $(DEPDIR)/libfftw3_threads_la-f77api.Plo
-#	$(AM_V_CC)source='f77api.c' object='libfftw3_threads_la-f77api.lo' libtool=yes \
+libfftw3f_threads_la-f77api.lo: f77api.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -MT libfftw3f_threads_la-f77api.lo -MD -MP -MF $(DEPDIR)/libfftw3f_threads_la-f77api.Tpo -c -o libfftw3f_threads_la-f77api.lo `test -f 'f77api.c' || echo '$(srcdir)/'`f77api.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libfftw3f_threads_la-f77api.Tpo $(DEPDIR)/libfftw3f_threads_la-f77api.Plo
+#	$(AM_V_CC)source='f77api.c' object='libfftw3f_threads_la-f77api.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3_threads_la-f77api.lo `test -f 'f77api.c' || echo '$(srcdir)/'`f77api.c
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libfftw3f_threads_la_CFLAGS) $(CFLAGS) -c -o libfftw3f_threads_la-f77api.lo `test -f 'f77api.c' || echo '$(srcdir)/'`f77api.c
 
 mostlyclean-libtool:
 	-rm -f *.lo

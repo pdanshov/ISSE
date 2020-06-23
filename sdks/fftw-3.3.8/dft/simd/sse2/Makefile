@@ -195,16 +195,16 @@ am__objects_18 = $(am__objects_1) $(am__objects_2) $(am__objects_3) \
 	$(am__objects_13) $(am__objects_14) $(am__objects_15) \
 	$(am__objects_16) $(am__objects_17)
 am__objects_19 = $(am__objects_18) genus.lo codlist.lo
-#am__objects_20 = $(am__objects_19)
-#am_libdft_sse2_codelets_la_OBJECTS =  \
-#	$(am__objects_20)
+am__objects_20 = $(am__objects_19)
+am_libdft_sse2_codelets_la_OBJECTS =  \
+	$(am__objects_20)
 libdft_sse2_codelets_la_OBJECTS =  \
 	$(am_libdft_sse2_codelets_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
 am__v_lt_0 = --silent
 am__v_lt_1 = 
-#am_libdft_sse2_codelets_la_rpath =
+am_libdft_sse2_codelets_la_rpath =
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -269,16 +269,16 @@ am__DIST_COMMON = $(srcdir)/Makefile.in $(top_srcdir)/depcomp \
 	$(top_srcdir)/dft/simd/codlist.mk \
 	$(top_srcdir)/dft/simd/simd.mk
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/missing aclocal-1.15
 ALLOCA = 
 ALTIVEC_CFLAGS = 
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/missing autoconf
-AUTOHEADER = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/missing autoheader
-AUTOMAKE = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/missing automake-1.15
+AUTOCONF = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/missing autoconf
+AUTOHEADER = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/missing autoheader
+AUTOMAKE = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/missing automake-1.15
 AVX2_CFLAGS = 
 AVX512_CFLAGS = 
 AVX_128_FMA_CFLAGS = 
@@ -326,7 +326,7 @@ LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/missing makeinfo
+MAKEINFO = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 MPICC = 
@@ -350,8 +350,8 @@ PACKAGE_URL =
 PACKAGE_VERSION = 3.3.8
 PATH_SEPARATOR = :
 POW_LIB = 
-PRECISION = d
-PREC_SUFFIX = 
+PRECISION = s
+PREC_SUFFIX = f
 PTHREAD_CC = 
 PTHREAD_CFLAGS = 
 PTHREAD_LIBS = 
@@ -360,16 +360,16 @@ SED = /bin/sed
 SET_MAKE = 
 SHARED_VERSION_INFO = 8:8:5
 SHELL = /bin/bash
-SSE2_CFLAGS = 
+SSE2_CFLAGS = -msse
 STACK_ALIGN_CFLAGS = 
 STRIP = strip
 THREADLIBS = 
 VERSION = 3.3.8
 VSX_CFLAGS = 
-abs_builddir = /home/dolly/isse-code/sdks/fftw-3.3.8/dft/simd/sse2
-abs_srcdir = /home/dolly/isse-code/sdks/fftw-3.3.8/dft/simd/sse2
-abs_top_builddir = /home/dolly/isse-code/sdks/fftw-3.3.8
-abs_top_srcdir = /home/dolly/isse-code/sdks/fftw-3.3.8
+abs_builddir = /home/dolly/github/ISSE/sdks/fftw-3.3.8/dft/simd/sse2
+abs_srcdir = /home/dolly/github/ISSE/sdks/fftw-3.3.8/dft/simd/sse2
+abs_top_builddir = /home/dolly/github/ISSE/sdks/fftw-3.3.8
+abs_top_srcdir = /home/dolly/github/ISSE/sdks/fftw-3.3.8
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -400,7 +400,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/dolly/isse-code/sdks/fftw-3.3.8/install-sh
+install_sh = ${SHELL} /home/dolly/github/ISSE/sdks/fftw-3.3.8/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -505,9 +505,9 @@ $(T2F) $(T3F) $(T1BU) $(T1B) $(T2B) $(T3B) $(T1S) $(T2S) $(Q1F) $(Q1B)
 
 AM_CPPFLAGS = -I $(top_srcdir)
 EXTRA_DIST = $(SIMD_CODELETS) genus.c codlist.c
-#BUILT_SOURCES = $(EXTRA_DIST)
-#noinst_LTLIBRARIES = libdft_sse2_codelets.la
-#libdft_sse2_codelets_la_SOURCES = $(BUILT_SOURCES)
+BUILT_SOURCES = $(EXTRA_DIST)
+noinst_LTLIBRARIES = libdft_sse2_codelets.la
+libdft_sse2_codelets_la_SOURCES = $(BUILT_SOURCES)
 all: $(BUILT_SOURCES)
 	$(MAKE) $(AM_MAKEFLAGS) all-am
 
