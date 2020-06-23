@@ -1,0 +1,13 @@
+
+juce:
+Dec 7 2013
+https://github.com/juce-framework/JUCE/tree/19a6a282a2b62190e982301ffade47b28384bfff
+
+
+
+
+jucebak
+2020 (latest version)
+
+
+

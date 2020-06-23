@@ -18,7 +18,7 @@
 #ifndef __PLUGINLISTWINDOW_H_6C66BAD7__
 #define __PLUGINLISTWINDOW_H_6C66BAD7__
 
-#include "JuceHeader.h"
+#include "../JuceHeader.h"
 
 class DocumentWindowClosedListener
 {

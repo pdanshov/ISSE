@@ -22,7 +22,9 @@
 #include "ISSSource.h"
 #include "ISSSink.h"
 #include "ISSDefs.h"
-#include "JuceHeader.h"
+//pdanshov - 6.23.2020: I renamed includes manually, probably don't need the juce header
+// found it in main folder:
+#include "../JuceHeader.h"
 
 
 

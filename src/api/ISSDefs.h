@@ -19,7 +19,8 @@
 #define __ISS_Defs_H__
 
 #include <utility>
-#include <Eigen/Dense>
+//#include <Eigen/Dense>
+#include "../../sdks/eigen/Dense"
 
 
 inline double round(double val)
